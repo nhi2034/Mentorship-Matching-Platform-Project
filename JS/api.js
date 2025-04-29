@@ -7,7 +7,6 @@ function saveUsers(users) {
   localStorage.setItem('users', JSON.stringify(users));
 }
 
-// Mock API Đăng ký
 function mockRegisterAPI({ name, email, password, role }) {
   return new Promise((resolve, reject) => {
     const users = getUsers();
