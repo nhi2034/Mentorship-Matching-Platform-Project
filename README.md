@@ -1,9 +1,9 @@
 ## How to install
 1. Download the source code by:
 - Cloning the repo: git clone [<GitHub link>](https://github.com/nhi2034/Mentorship-Matching-Platform-Project.git) or downloading the ZIP file from GitHub and extracting it
-- Open the project folder in VSCode
+2. Open the project folder in VSCode
 - Open the index.html file in your browser (double-click it or use Live Server to preview)
-- Only the frontend. So , you're using a mock API with JSON-server, run the following commands:
+3. Only the frontend. So , you're using a mock API with JSON-server, run the following commands:
    `npm install` or `npm run start`
 
 ## Technologies Used
