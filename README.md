@@ -6,7 +6,7 @@
 - Only the frontend. So , you're using a mock API with JSON-server, run the following commands:
    `npm install` or `npm run start`
 
-##Technologies Used
+## Technologies Used
 - HTML, CSS, JavaScript (Vanilla)
 - Mock API (simulated using plain JavaScript functions)
 - Deployed using GitHub.
