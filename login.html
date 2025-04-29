@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/CSS/login.css" />
+    <title>Log in</title>
+    <link
+      rel="icon"
+      href="./assets/icon/book-mentoring-logo.png"
+      type="image/png"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="./index.html"
+        ><img
+          class="logo-picture"
+          src="./assets/icon/mentoring-logo.png"
+          alt="logo of Mentorship Matching Platform"
+      /></a>
+      <div class="info-mentoring">
+        <p class="info">About</p>
+        <p class="info">Explore Mentor</p>
+      </div>
+      <a href="./register.html"
+        ><button class="login-button">Sign up</button></a
+      >
+    </header>
+
+    <main>
+      <h1>Log in</h1>
+      <form action="">
+        <div>
+          <p class="input-info input-login-username">Name <span>*</span></p>
+          <input required type="text" placeholder="Name" />
+        </div>
+        <div>
+          <p class="input-info input-login-email">Email <span>*</span></p>
+          <input required type="text" placeholder="Email" />
+        </div>
+        <div>
+          <p class="input-info input-login-password">Password <span>*</span></p>
+          <input required type="text" placeholder="Password" />
+        </div>
+        <p id="forgot-password">Forgot Password?</p>
+      </form>
+      <div class="log-in-button">
+        <button class="log-in login__registerButton">Login as Mentee</button>
+        <button class="log-in">Login as Mentor</button>
+      </div>
+    </main>
+
+    <script src="./JS/api.js"></script>
+    <script src="./JS/storage.js"></script>
+    <script src="./JS/auth-login.js"></script>
+  </body>
+</html>

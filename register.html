@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/CSS/register.css" />
+    <title>Mentorship Matching Platform</title>
+    <link
+      rel="icon"
+      href="./assets/icon/book-mentoring-logo.png"
+      type="image/png"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="./index.html"
+        ><img
+          class="logo-picture"
+          src="./assets/icon/mentoring-logo.png"
+          alt="logo of Mentorship Matching Platform"
+      /></a>
+      <div class="info-mentoring">
+        <p class="info">About</p>
+        <p class="info">Explore Mentor</p>
+      </div>
+      <a href="./login.html"><button class="login-button">Log in</button></a>
+    </header>
+
+    <main>
+      <h1>Create an Account</h1>
+
+      <form class="info-user" action="">
+        <div>
+          <p>Name <span>*</span></p>
+          <input
+            class="input-info input-signup-username"
+            required
+            type="text"
+            placeholder="Name"
+          />
+        </div>
+        <div>
+          <p>Phone</p>
+          <input class="input-info" type="text" placeholder="Phone" />
+        </div>
+        <div>
+          <p>Email <span>*</span></p>
+          <input
+            class="input-info input-signup-email"
+            required
+            type="text"
+            placeholder="Email"
+          />
+        </div>
+        <div>
+          <p>Password <span>*</span></p>
+          <input
+            class="input-info input-signup-password"
+            required
+            type="text"
+            placeholder="Password"
+          />
+        </div>
+        <div>
+          <p>Goal</p>
+          <textarea class="input-info" id="input-goal" type="text"></textarea>
+        </div>
+      </form>
+
+      <div class="select-type">
+        <h2>Select Account Type <span>*</span></h2>
+        <div class="checkbox">
+          <div class="checkbox-mentee-mentor">
+            <input type="checkbox" />
+            <h3>Mentee</h3>
+          </div>
+          <div class="checkbox-mentee-mentor">
+            <input type="checkbox" />
+            <h3>Mentor</h3>
+          </div>
+        </div>
+      </div>
+
+      <button class="create-account signup__signInButton">
+        Create an Account
+      </button>
+    </main>
+
+    <script src="./JS/api.js"></script>
+    <script src="./JS/storage.js"></script>
+    <script src="./JS/auth-register.js"></script>
+  </body>
+</html>

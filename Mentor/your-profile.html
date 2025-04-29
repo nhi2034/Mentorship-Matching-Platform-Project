@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/CSS/your-profile.css" />
+  <link rel="stylesheet" href="../assets/CSS/header.css">
+  <link rel="stylesheet" href="../assets/CSS/sidebar.css">
+  <link rel="stylesheet" href="../assets/CSS/general.css">
+  <title>Your profile</title>
+  <link rel="icon" href="./assets/icon/book-mentoring-logo.png" type="image/png">
+</head>
+
+<body>
+  <header class="header">
+    <div>
+      <a href="../index.html"><img class="logo" src="../assets/icon/mentoring-logo.png" alt="the logo of mentoring website"></a>
+    </div>
+
+
+    <div class="middel-session">
+      <input class="search-bar" type="text" placeholder="Search" />
+      <img class="search-icon" src="../assets/icon/search.svg" alt="search icon" />
+    </div>
+
+    <div class="left-session">
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="../assets/icon/notifications.svg" alt="notifications icon">
+        <div class="notifications-count">3</div>
+      </div>
+      <div class="message-icon-container">
+        <img class="message-icon" src="../assets/icon/message-icon.svg" alt="message icon">
+        <div class="message-count">4</div>
+      </div>
+
+      <img class="avatar-icon" src="../assets/icon/avatar-icon.png" alt="avatar icon">
+    </div>
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <!--Match with a mentee-->
+    <a href="./match-mentee.html">
+      <div class="sidebar-link">
+        <img src="./assets/icon/match-up.svg" alt="match with a mentee icon">
+        <p>Match with Mentee</p>
+      </div>
+    </a>
+    <!--Progress tracker-->
+    <a href="./progress-tracker.html"><div class="sidebar-link">
+      <img src="../assets/icon/progress-bar-5.svg" alt="progress tracker icon">
+      <p>Progress Tracker</p>
+    </div></a>
+    <!--Your Profile-->
+    <a href="./your-profile.html">
+      <div class="sidebar-link">
+        <img src="../assets/icon/avatar-icon.png" alt="your profile icon">
+        <p>Your profile</p>
+      </div>
+    </a>
+    <!--Feedback-->
+    <div class="sidebar-link">
+      <img src="../assets/icon/feedback-17.svg" alt="feedback icon">
+      <p>Feedback</p>
+    </div>
+    <!--Switch to mentee-->
+    <a href="../login.html">
+      <div class="sidebar-link">
+        <img id="sidebar-link-switch" src="../assets/icon/switch-18.svg" alt="switch to mentee">
+        <p>Switch to mentee</p>
+      </div>
+    </a>
+    <!--Logout-->
+    <div class="sidebar-link sidebar-link-logout">
+      <img src="../assets/icon/logout-20.svg" alt="log out icon">
+      <p>Log out</p>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="your-profile-picture">
+      <img src="../assets/icon/avatar-icon.png" alt="avatar">
+      <h1>Nguyen Phan Uyen Nhi</h1>
+      <p>phanuyennhi230902@gmail.com</p>
+    </div>
+
+    <div class="your-profile-info">
+      <div class="your-role">
+        <h2>Role</h2>
+        <p>HTML, CSS, Python, Javascript</p>
+      </div>
+      <div class="your-skill">
+        <h2>Skills</h2>
+        <p>FrontEnd Development</p>
+      </div>
+      <div class="your-bio">
+        <h2>Short Bio</h2>
+        <p>Aspiring FrontEnd Developer with a passion for learning.</p>
+      </div>
+    </div>
+    <div class="your-profile-button">
+      <a href="./edit-profile.html"><button>Edit Profile</button></a>
+      <button>Delete Profile</button>
+    </div>
+  </main>
+
+  <script src="../JS/logout.js"></script>
+</body>
+
+</html>

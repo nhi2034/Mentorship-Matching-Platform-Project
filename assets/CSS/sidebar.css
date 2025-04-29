@@ -1,0 +1,48 @@
+.sidebar {
+  position: fixed;
+  background-color: white;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  width: 130px;
+  z-index: 200;
+  padding-top: 15px;
+}
+
+.sidebar-link {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  margin-bottom: 20px;
+}
+
+.sidebar-link:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.sidebar-link:active {
+  background-color: grey;
+}
+
+.sidebar-link img {
+  height: 30px;
+  margin-bottom: 6px;
+}
+
+.sidebar-link p {
+  font-size: 12px;
+}
+
+.sidebar-link-logout {
+  background-color: #66c8a0;
+  color: white;
+  font-weight: 500;
+}
+
+#sidebar-link-switch {
+  height: 38px;
+}

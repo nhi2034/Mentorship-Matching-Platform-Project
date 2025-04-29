@@ -1,0 +1,203 @@
+.main-content {
+  width: 700px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: auto;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0;
+  color: #66c8a0;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  width: 600px;
+  color: #83c6ab;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.info-mentee {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.info-mentee-age{
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.info-mentee-age div {
+  vertical-align: text-top;
+}
+
+.info-mentee-age input {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.info-mentee-age input:checked {
+  background-color: #66c8a0;
+  border-color: #66c8a0;
+}
+
+.info-mentee-skill {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.info-mentee-skill input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.info-mentee-skill input[type="radio"]:checked {
+  background-color: #66c8a0;
+  border-color: #66c8a0;
+}
+
+.info-mentee-other {
+  width: 100px;
+  margin-left: 5px;
+}
+
+.info-mentee-hobbies {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.mentee-hobbies-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.mentee-hobbies-container input[type="checkbox"] {
+  border: 2px solid gray;
+  outline: none;
+  cursor: pointer;
+}
+
+.mentee-hobbies-container input[type="checkbox"]:checked {
+  background-color: #66c8a0;
+  border-color: #66c8a0;
+}
+
+.mentee-hobbies-container input[type="checkbox"]:after {
+  border: solid white;
+}
+
+.info-mentee-personality {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.mentee-personality-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+button {
+  padding: 10px 50px;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: #66c8a0;
+  border: solid 2px gray;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #83c6ab;
+}
+
+button:active {
+  opacity: 0.6;
+}
+
+@media (max-width: 830px) {
+  .main-content {
+    width: 90%;
+    margin-left: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  .info-mentee {
+    grid-template-columns: 1fr;
+  
+  }
+
+  .mentee-hobbies-container,
+  .mentee-personality-container {
+    grid-template-columns: 1fr;
+  
+  }
+
+  .info-mentee-other {
+    width: 80%;
+    margin-top: 5px;
+  }
+
+  button {
+    padding: 8px 30px;
+    font-size: 18px;
+  }
+}

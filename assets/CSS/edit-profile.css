@@ -1,0 +1,154 @@
+.main-content {
+  width: 600px;
+  background-color: white;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: auto;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+
+  padding: 20px;
+}
+
+.your-profile-picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.your-profile-picture img {
+  height: 120px;
+}
+
+.your-picture {
+  position: relative;
+}
+
+.your-picture div{
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+
+  background-color: #66c8a0;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+
+
+.your-profile-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.your-profile-info p {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #66c8a0;
+}
+
+.your-profile-info input {
+  padding: 8px;
+  width: 350px;
+
+  border-radius: 5px;
+  border: solid 1px gray;
+}
+
+.your-profile-info input:focus {
+  border-color: #66c8a0;
+  border-width: 2px;
+  outline: none;
+}
+
+.your-profile-info textarea {
+  padding: 8px;
+  width: 350px;
+  height: 80px;
+
+  border-radius: 5px;
+  border: solid 1px gray;
+}
+
+.your-profile-info textarea:focus {
+  border-color: #66c8a0;
+  border-width: 2px;
+  outline: none;
+}
+
+.your-profile-button {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.your-profile-button button {
+  background-color: #66c8a0;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+
+  border: solid 1px lightgray;
+  border-radius: 5px;
+
+  padding: 10px 20px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.your-profile-button button:hover {
+  background-color: #83c6ab;
+}
+
+.your-profile-button button:active {
+  opacity: 0.6;
+}
+
+@media (max-width: 790px) {
+  .main-content {
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 20px;
+
+  }
+
+  .your-profile-picture img {
+    height: 80px;
+  }
+
+  .your-profile-info input,
+  .your-profile-info textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .your-profile-info textarea {
+    height: 70px;
+  }
+
+  .your-profile-info p {
+    font-size: 14px;
+  }
+
+  .your-profile-button {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+  }
+}

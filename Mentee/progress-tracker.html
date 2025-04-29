@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/CSS/progress-tracker.css" />
+  <link rel="stylesheet" href="../assets/CSS/header.css">
+  <link rel="stylesheet" href="../assets/CSS/sidebar.css">
+  <link rel="stylesheet" href="../assets/CSS/general.css">
+  <title>Progress Tracker</title>
+  <link rel="icon" href="../assets/icon/book-mentoring-logo.png" type="image/png">
+</head>
+
+<body>
+  <header class="header">
+    <div>
+      <a href="../index.html"><img class="logo" src="../assets/icon/mentoring-logo.png" alt="the logo of mentoring website"></a>
+    </div>
+
+
+    <div class="middel-session">
+      <input class="search-bar" type="text" placeholder="Search" />
+      <img class="search-icon" src="../assets/icon/search.svg" alt="search icon" />
+    </div>
+
+    <div class="left-session">
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="../assets/icon/notifications.svg" alt="notifications icon">
+        <div class="notifications-count">3</div>
+      </div>
+      <div class="message-icon-container">
+        <img class="message-icon" src="../assets/icon/message-icon.svg" alt="message icon">
+        <div class="message-count">4</div>
+      </div>
+
+      <img class="avatar-icon" src="../assets/icon/avatar-icon.png" alt="avatar icon">
+    </div>
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <!--Match with a mentor-->
+    <a href="./match-mentor.html">
+      <div class="sidebar-link">
+        <img src="../assets/icon/match-up.svg" alt="match with a mentor icon">
+        <p>Match with Mentor</p>
+      </div>
+    </a>
+    <!--Progress tracker-->
+    <div class="sidebar-link">
+      <img src="../assets/icon/progress-bar-5.svg" alt="progress tracker icon">
+      <p>Progress Tracker</p>
+    </div>
+    <!--Your Profile-->
+    <a href="./your-profile.html">
+      <div class="sidebar-link">
+        <img src="../assets/icon/avatar-icon.png" alt="your profile icon">
+        <p>Your profile</p>
+      </div>
+    </a>
+    <!--Feedback-->
+    <div class="sidebar-link">
+      <img src="../assets/icon/feedback-17.svg" alt="feedback icon">
+      <p>Feedback</p>
+    </div>
+    <!--Switch to mentor-->
+    <a href="../login.html">
+      <div class="sidebar-link">
+        <img id="sidebar-link-switch" src="../assets/icon/switch-18.svg" alt="switch to mentor">
+        <p>Switch to mentor</p>
+      </div>
+    </a>
+    <!--Logout-->
+    <div class="sidebar-link sidebar-link-logout">
+      <img src="../assets/icon/logout-20.svg" alt="log out icon">
+      <p>Log out</p>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <h1>Your Goal: Is currently set to having Four mentor to mentee interactions a week.</h1>
+
+    <div class="schedule">
+      <div class="schedule-mentor">
+        <div class="schedule-text">
+          <input type="checkbox">
+          <p>Meet with Jake on Monday.</p>
+        </div>
+        <div class="schedule-icon">
+          <img src="../assets/icon/up-arrow-1-3.svg" alt="up arrow icon">
+          <img src="../assets/icon/down-arrow-1-4.svg" alt="down arrow icon">
+          <img src="../assets/icon/hamburger-menu.svg" alt="hamburger menu icon">
+        </div>
+      </div>
+
+      <div class="schedule-mentor">
+        <div class="schedule-text">
+          <input type="checkbox">
+          <p>Meet with Ashley on Wednesday.</p>
+        </div>
+        <div class="schedule-icon">
+          <img src="../assets/icon/up-arrow-1-3.svg" alt="up arrow icon">
+          <img src="../assets/icon/down-arrow-1-4.svg" alt="down arrow icon">
+          <img src="../assets/icon/hamburger-menu.svg" alt="hamburger menu icon">
+        </div>
+      </div>
+
+      <div class="schedule-mentor">
+        <div class="schedule-text">
+          <input type="checkbox">
+          <p>Meet with Lisa on Friday.</p>
+        </div>
+        <div class="schedule-icon">
+          <img src="../assets/icon/up-arrow-1-3.svg" alt="up arrow icon">
+          <img src="../assets/icon/down-arrow-1-4.svg" alt="down arrow icon">
+          <img src="../assets/icon/hamburger-menu.svg" alt="hamburger menu icon">
+        </div>
+      </div>
+
+      <div class="schedule-mentor">
+        <div class="schedule-text">
+          <input type="checkbox">
+          <p>Meet with Jake on Saturday.</p>
+        </div>
+        <div class="schedule-icon">
+          <img src="../assets/icon/up-arrow-1-3.svg" alt="up arrow icon">
+          <img src="../assets/icon/down-arrow-1-4.svg" alt="down arrow icon">
+          <img src="../assets/icon/hamburger-menu.svg" alt="hamburger menu icon">
+        </div>
+      </div>
+    </div> 
+
+    <div class="schedule-completed">
+      <p class="schedule-completed-count">Completed of 0 of 4</p>
+      <p class="add-task"><span>&#x2B;</span> Add task</p>
+    </div>
+
+    <button class="contact-mentor">Contact Mentor</button>
+  </main>
+
+  <script src="../JS/logout.js"></script>
+</body>
+
+</html>
